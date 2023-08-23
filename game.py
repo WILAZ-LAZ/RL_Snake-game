@@ -31,7 +31,7 @@ SPEED = 20
 #4-game_iteration
 #is_collision
 
-class SnakeGame:
+class SnakeGameAI:
     def __init__(self, w = 640, h = 480):
         self.w = w
         self.h = h
