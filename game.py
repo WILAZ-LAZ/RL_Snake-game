@@ -2,7 +2,7 @@ import pygame
 import random
 from enum import Enum
 from collections import namedtuple
-import numpy
+import numpy as np
 
 pygame.init()
 font = pygame.font.SysFont('arial', 25)
@@ -23,13 +23,13 @@ BLUE2 = (0, 100, 255)
 RED = (200, 0, 0)
 
 BLOCK_SIZE = 20
-SPEED = 20
+SPEED = 40
 # to turn this game into a ai controlled game we need to add few functions:
 #1-reset
 #2-reward
 #3-play(action)
 #4-game_iteration
-#is_collision
+#5-is_collision
 
 class SnakeGameAI:
     def __init__(self, w = 640, h = 480):
